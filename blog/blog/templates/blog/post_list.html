@@ -1,0 +1,21 @@
+<!-- blog/templates/blog/post_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Posts</title>
+</head>
+<body>
+    <h1>Blog Posts</h1>
+    {% if posts %}
+        <ul>
+            {% for post in posts %}
+                <strong>{{ post.title }}</strong><br>
+                {{ post.content }}<br>
+                <em>Published on: {{ post.pub_date }}</em>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No posts available.</p>
+    {% endif %}
+</body>
+</html>
