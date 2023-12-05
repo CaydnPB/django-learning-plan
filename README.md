@@ -18,17 +18,23 @@
   <li><em><strong>TBC</strong></em></li>
 </ol>
 <div align="center">
-  <h2>Project Files</h2>
+  <h2>Project Folders</h2>
   <img src="./img/gradient.svg" alt="A gradient separator used to distinguish sections of the page" draggable="false"
     style="max-width: 100%;" title="Gradient Separator">
 </div>
 <br>
 <p>
-  Project files in this repository include:
+  Project folders in this repository include:
   <ul>
-    <li><em><strong>TBC</strong></em></li>
+    <li>blog</li>
       <ul>
-        <li><em><strong>TBC</strong></em></li>
+        <li>blog</li>
+        <li><strong>firstsite</strong></li>
+      </ul>
+    <li>board</li>
+      <ul>
+        <li><strong>board</strong></li>
+        <li>projectboard</li>
       </ul>
   </ul>
 </p>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SprintBoard</title>
+</head>
+<body>
+    <h1>SprintBoard</h1>
+    {% if issues %}
+        <ul>
+            {% for issue in issues %}
+                <strong>{{ issue.title }}</strong><br>
+                {{ issue.description }}<br>
+                <strong>Status: {{issue.board_number}}</strong><br>
+                <em>Published on: {{ issue.pub_date }}</em>
+                <br>
+                <br>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No issues available.</p>
+    {% endif %}
+</body>
+</html>
