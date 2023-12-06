@@ -6,5 +6,11 @@ def projectboard(request):
     issues = ProjectBoardIssue.objects.all()
     return render(request, "projectboard/body.html", {'issues': issues})
 
-def titlemethod(request):
-    return HttpResponse("<h1>SprintBoard</h1>")
+def projectdetail(request):
+    return render(request, 'projectboard/projectdetail.html')
+
+def projectcreate(request, projectname):
+    context = {
+        'projectname': projectname,
+    }
+    return render(request, 'projectboard/projectcreate.html', context)

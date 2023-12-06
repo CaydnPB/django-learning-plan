@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <title>SprintBoard</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
 </head>
 <body>
     <h1>SprintBoard</h1>
+    <img src="{% static 'images/favicon.png' %}" alt="SprintBoard Logo"/>
     {% if issues %}
         <ul>
             {% for issue in issues %}
