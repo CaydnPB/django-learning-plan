@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-{% load static %}
-<html>
-<head>
-    <title>SprintBoard</title>
-    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
-</head>
-<body>
-    <h1>SprintBoard</h1>
-    <img src="{% static 'images/favicon.png' %}" alt="SprintBoard Logo"/>
+{% extends "projectboard/base.html" %}
+{% block title %} Home {% endblock %}
+{% block heading %} SprintBoard {% endblock %}
+{% block content %}
     {% if issues %}
         <ul>
             {% for issue in issues %}
@@ -22,5 +16,4 @@
     {% else %}
         <p>No issues available.</p>
     {% endif %}
-</body>
-</html>
+{% endblock %}

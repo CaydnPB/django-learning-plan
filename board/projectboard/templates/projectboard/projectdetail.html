@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-{% load static %}
-<html>
-<head>
-    <title>Project Creation</title>
-    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
-</head>
-<body>
+{% extends "projectboard/base.html" %}
+{% block title %} Project Creation {% endblock %}
+{% block heading %} Project Creation {% endblock %}
+{% block content %}
     <h1>Project Creation</h1>
     <p>These are all of the projects which currently exist:</p>
     <p>Click here to create a new project.</p>
-</body>
-</html>
+{% endblock %}
