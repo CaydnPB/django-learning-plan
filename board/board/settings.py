@@ -112,6 +112,9 @@ USE_I18N = True
 
 USE_TZ = True
 
+TIME_INPUT_FORMATS = [
+    '%H:%M:%S',     # '14:30:59'
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/

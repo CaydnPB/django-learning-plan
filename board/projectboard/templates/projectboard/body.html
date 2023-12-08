@@ -5,14 +5,17 @@
 {% block currentLinkTest %}{% endblock %}
 {% block content %}
     {% if issues %}
-        <ul>
+        <ul style="
+        padding-left: 0px;
+        ">
             {% for issue in issues %}
-                <strong>{{ issue.title }}</strong><br>
-                {{ issue.description }}<br>
-                <strong>Status: {{issue.board_number}}</strong><br>
-                <em>Published on: {{ issue.pub_date }}</em>
-                <br>
-                <br>
+                <div class="issuecard">
+                    <h5>{{ issue.title }}</h5>
+                    <h6>{{ issue.description }}</h6>
+                    <h6>Project: {{issue.project_number}}</h6>
+                    <h6>Status: {{issue.issue_status}}</h6>
+                    <h6>Since: {{ issue.pub_date }}</h6>
+                </div>
             {% endfor %}
         </ul>
     {% else %}
