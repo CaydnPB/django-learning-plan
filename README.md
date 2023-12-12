@@ -15,7 +15,14 @@
 </div>
 <br>
 <ol>
-  <li><em><strong>TBC</strong></em></li>
+  <li>Ensure that <code>python3</code>, <code>pip3</code> and <code>django</code> are installed</li>
+  <li>Ensure that your terminal is scoped to the relevant folder: <code>cd &lt;folder&gt;</code></li>
+  <li><code>python3 manage.py createsuperuser</code></li>
+  <li>Create admin credentials</li>
+  <li><code>python3 manage.py makemigrations</code></li>
+  <li><code>python3 manage.py migrate</code></li>
+  <li><code>python3 manage.py runserver</code></li>
+  <li>Open the <code>localhost</code> link provided in the terminal</li>
 </ol>
 <div align="center">
   <h2>Project Folders</h2>
